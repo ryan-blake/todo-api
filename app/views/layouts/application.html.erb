@@ -1,0 +1,24 @@
+<html>
+ <head>
+  <title>OPEN TODO</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+ </head>
+<body>
+   <ul class="nav nav-tabs">
+    <li><%= link_to "OPEN TODO" , root_path %></li>
+    <div class="pull-right user-info">
+    
+    </div>
+   </ul>
+  <div class="container">
+    <p class="notice"><%= flash[:notice] %></p>
+    <p class="alert"><%= flash[:alert] %></p>
+    <p class="error"><%= flash[:error] %></p>
+
+    <%= yield %>
+
+  </div>
+
+</html>
