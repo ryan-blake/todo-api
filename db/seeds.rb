@@ -1,7 +1,8 @@
 5.times do
   user = User.new(
   email: Faker::Internet.email,
-  full_name:  Faker::Name.name
+  full_name:  Faker::Name.name,
+  password: "testtest"
   )
 
   user.save!
