@@ -25,7 +25,7 @@ lists = List.all
   Item.create!(
   name:  Faker::Hipster.word,
   list: lists.sample
-  )
+)
 
 end
 items = Item.all
